@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de cadastro</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Trispace&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <!-- Container -->
+    <section class="container">
+      <h1>Registration Form</h1>
+
+      <!-- Rules to submit -->
+      <ul class="main-requisits">
+        <li>User is made only by letters/numbers</li>
+        <li>User must be 3-12 chars</li>
+        <li>Password must be 6-12 chars</li>
+      </ul>
+
+      <form id="form">
+        <label>User</label>
+        <input type="text" class="validar user" title="type your name">
+
+        <label>CPF</label>
+        <input type="text" name="cpf" class="validar cpf" title="type your CPF">
+
+        <label>Email</label>
+        <input type="email" id="email" class="validar" title="type your email">
+
+        <label>Password</label>
+        <input type="password" id="password" class="validar" title="type your password">
+
+
+        <label>Repeat Password</label>
+        <input type="password" id="repPassword" class="validar" title="repeat your password">
+
+        <button>SUBMIT</button>
+      </form>
+    </section>
+  </main>
+  <script src="./js/cpfValidator.js"></script>
+  <script src="./js/js.js"></script>
+</body>
+
+</html>
